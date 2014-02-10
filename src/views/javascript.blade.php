@@ -1,7 +1,8 @@
 <script type="text/javascript">
+    var oTable;
     jQuery(document).ready(function(){
         // dynamic table
-        jQuery('.{{ $class }}').dataTable({
+        oTable = jQuery('.{{ $class }}').dataTable({
             "sPaginationType": "full_numbers",
             "bProcessing": false,
             @foreach ($options as $k => $o)
